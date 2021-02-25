@@ -1,5 +1,18 @@
-$color-red: red !default;
+@import './base/custom-properties';
+@import './base/reset';
+@import './base/typography';
 
-h1 {
-    color: $color-red;
-}
+// Components
+@import './components/button';
+@import './components/columns';
+@import './components/container';
+@import './components/do-list';
+@import './components/footer';
+@import './components/header';
+@import './components/highlights';
+@import './components/link';
+@import './components/navigation';
+@import './components/page-header';
+@import './components/page-hero';
+@import './components/section';
+@import './components/timeline';

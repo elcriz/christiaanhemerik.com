@@ -1,0 +1,11 @@
+.footer {
+    padding-top: calc(var(--spacing) * 4);
+    padding-bottom: calc(var(--spacing) * 6);
+    background-color: rgba(var(--color-ui-dark), 1);
+    color: rgba(var(--color-text-light), 1);
+}
+
+.footer__container {
+    max-width: var(--range-hand-end);
+    // text-align: center;
+}

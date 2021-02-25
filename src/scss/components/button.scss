@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    padding: var(--spacing) calc(var(--spacing) * 2);
+    color: rgba(var(--color-text-light), 1);
+    font-weight: var(--font-weight-200);
+    border-radius: var(--border-radius-100);
+    transition: var(--transition-cubic);
+}
+
+.button--primary {
+    background-color: rgba(var(--color-primary), 1);
+    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15);
+
+    &:hover,
+    &:focus {
+        box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .25);
+    }
+
+    .page-hero__actions & {
+        margin-right: var(--spacing);
+    }
+}

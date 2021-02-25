@@ -1,0 +1,13 @@
+.link {
+    color: rgba(var(--color-primary), 1);
+    font-weight: var(--font-weight-200);
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+.link--discrete {
+    font-weight: var(--font-weight-100);
+}

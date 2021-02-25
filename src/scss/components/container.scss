@@ -1,0 +1,14 @@
+:root {
+    --container-max-width: var(--range-lap-end);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 calc(var(--spacing) * 2);
+    max-width: var(--container-max-width);
+    box-sizing: border-box;
+}
+
+.container--narrow {
+    max-width: var(--range-hand-end);
+}

@@ -1,0 +1,26 @@
+.columns {
+    margin-bottom: calc(-1 * var(--spacing));
+
+    @media(min-width: $range-lap-begin) {
+        column-width: auto;
+        column-gap: calc(var(--spacing) * 2);
+    }
+
+    @media(min-width: $range-lap-begin) and (max-width: 880px) {
+        column-count: 2;
+    }
+
+    @media(min-width: 881px) {
+        column-count: 3;
+    }
+
+    h2 {
+        margin-top: calc(var(--spacing) * 2);
+        margin-bottom: var(--spacing);
+        font-size: var(--font-size-300);
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

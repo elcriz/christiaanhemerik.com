@@ -1,0 +1,35 @@
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+    padding: 0;
+    margin: 0;
+}
+
+
+li > {
+    ol,
+    ul {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+[role=button] {
+    cursor: pointer;
+}
+
+abbr {
+    cursor: help;
+
+    &:not(:hover) {
+        text-decoration: none;
+    }
+}

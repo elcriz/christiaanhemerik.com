@@ -1,0 +1,19 @@
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: var(--spacing);
+}
+
+.navigation__link {
+    display: inline-block;
+    margin: 0 var(--spacing);
+    color: rgba(var(--color-secondary), 1);
+    font-size: var(--font-size-200);
+    font-weight: var(--font-weight-200);
+
+    &:hover,
+    &:focus {
+        color: rgba(var(--color-primary), 1);
+    }
+}

@@ -1,12 +1,209 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
     <head>
-        <title>Gulp Website</title>
+        <meta charset="utf-8" />
+        <title>Christiaan Hemerik: Experienced front-end UX developer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
     <body>
-        <div>
-            <h1>Hello World</h1>
-        </div>
+        <header class="page-header" role="banner">
+            <nav class="page-header__navigation navigation" role="navigation">
+                <a class="navigation__link" href="https://www.linkedin.com/in/elcriz/" target="_blank">LinkedIn</a>
+                <a class="navigation__link" href="https://twitter.com/elcriz" target="_blank">Twitter</a>
+                <a class="navigation__link" href="https://github.com/elcriz" target="_blank">GitHub</a>
+                <a class="navigation__link" href="https://www.instagram.com/elcriz/" target="_blank">Instagram</a>
+                <a class="navigation__link" href="https://open.spotify.com/artist/4Vsfdlyn5wvebSFwLyOfcx" target="_blank">Spotify</a>
+                <a class="navigation__link" href="https://music.apple.com/us/artist/elcriz/1531412039" target="_blank">Apple Music</a>
+            </nav>
+        </header>
+        <main aria-label="Content" role="main">
+            <section class="page-hero">
+                <div class="page-hero__container container">
+                    <div class="page-hero__intro">
+                        <div class="page-hero__greeter">Hallo <span>(<em>Dutch</em>) [interjection, noun]</span></div>
+                        <h1 class="page-hero__heading">I'm Christiaan, a senior front-end UX developer with a strong emphasis on user experience and accessibility.</h1>
+                    </div>
+                    <img class="page-hero__avatar" src="assets/img/profile-photo-01.jpg" alt="A photo of Christiaan Hemerik" />
+                </div>
+                <div class="container container--narrow">
+                    <div class="page-hero__content">
+                        I have over 15 years of experience with designing and developing online products (web and mobile). I currently hold a fulltime engineering position at <a class="link" href="https://thelearningnetwork.nl/en/" target="_blank">The Learning Network</a>, helping to improve education in The Netherlands and Belgium. Previously, I worked in a similar role at an agency called <a class="link" href="https://www.newstory.nl/en" target="_blank">New Story</a> and before that, I ran my own business working as a freelancer for numerous ambitious clients domestic and abroad.
+                    </div>
+                    <div class="page-hero__actions">
+                        <a class="button button--primary" href="#about" role="button">Learn more about me</a> or <a class="link" href="#footer">get in touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--alternative">
+                <header class="header">
+                    <h1 class="header__heading">Projects I worked on <small>(more on request)</small></h1>
+                </header>
+                <div class="container">
+                    <div class="highlights">
+                        <a class="highlight" href="" target="_blank">
+                            <div class="highlight__label">Fulltime position at The Learning Network</div>
+                            <h2 class="highlight__title">Bundle</h2>
+                            API-driven learning environment for secondary and higher education. I helped developing the <abbr title="single page app">SPA</abbr> in React, NodeJS and Redux.
+                        </a>
+
+                        <a class="highlight" href="" target="_blank">
+                            <div class="highlight__label">Fulltime position at New Story</div>
+                            <h2 class="highlight__title">Van der Valk Hotels</h2>
+                            Renowned hotel chain. I built the front-end for their booking engine <abbr title="single page app">SPA</abbr> from scratch in Angular (implementing the Redux pattern using @ngrx/store).
+                        </a>
+
+                        <a class="highlight" href="" target="_blank">
+                            <div class="highlight__label">Freelance</div>
+                            <h2 class="highlight__title">Oceanwide Expeditions</h2>
+                            Expedition cruises to the (Ant)arctic. I designed, prototyped and built the entire front-end for their website and booking engine.
+                        </a>
+                        <a class="highlight" href="" target="_blank">
+                            <div class="highlight__label">Freelance</div>
+                            <h2 class="highlight__title">Mom in Balance</h2>
+                            Worldwide outdoor workouts for (pregnant) women. I did user and identity research and designed and built their website from scratch.
+                        </a>
+
+                        <a class="highlight" href="" target="_blank">
+                            <div class="highlight__label">Freelance</div>
+                            <h2 class="highlight__title">Engie / GDF Suez / Electrabel</h2>
+                            Multinational electric utility company. I helped setting up a new start-up for (cross) selling home automation devices and designed and build the website's front-end.
+                        </a>
+                        <a class="highlight" href="" target="_blank">
+                            <div class="highlight__label">Freelance</div>
+                            <h2 class="highlight__title"><abbr title="Nederlandse Associatie Physician Assistants">NAPA</abbr></h2>
+                            Dutch association for physician assistants. I did user research, interviewing and prototyped, designed and built their website from scratch.
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section section">
+                <header class="header">
+                    <h1 class="header__heading">My typical day <small>(in no particular order)</small></h1>
+                </header>
+                <div class="container">
+                    <div class="columns">
+                        <h2>Every day</h2>
+                        <ul class="do-list do-list--love">
+                            <li>Connect (remotely) with my team to see if anyone needs help</li>
+                            <li>Build reusable React components for our design system</li>
+                            <li>Document and improve our coding standards and conventions</li>
+                            <li>Commit my code through Git, sticking to our Git flow I helped creating</li>
+                            <li>Create reusable, modular BEM HTML/CSS components</li>
+                            <li>Write and run unit (Jest) and E2E (Cypress) tests</li>
+                            <li>Review my team's code and pull requests</li>
+                            <li>Sketch user interfaces with pen and paper and gain feedback from users and stakeholders</li>
+                            <li>Promote the principles of 'human centered design' and 'design thinking' in general</li>
+                            <li>Demo real functioning (HTML/CSS/JavaScript) prototypes rather than boring, static mockups</li>
+                            <li>Spin up Docker containers, hook up pipelines to either our servers or the cloud</li>
+                            <li>Discuss APIs and GraphQL schemas with our back-end developers</li>
+                            <li>Hike at least 5km on my favourite nearby trails</li>
+                        </ul>
+                        <h2>Every now and then</h2>
+                        <ul class="do-list do-list--love">
+                            <li>Write React and Angular components in TypeScript for our latest projects</li>
+                            <li>Improve my skills following online workshops and courses, consuming newsletters, blogs and podcasts</li>
+                            <li>Meet (remotely) with front-end developers from other teams to discuss design system progress</li>
+                            <li>Explore areas of expertise I'm not familiar with (currently: Vue.js)</li>
+                        </ul>
+                        <h2>With time to spare</h2>
+                        <ul class="do-list do-list--green">
+                            <li>Hike longer distances <a class="link link--discrete" href="https://www.instagram.com/elcriz/" target="_blank">through nature</a> in both my region (the northeastern Netherlands) or in nearby Germany</li>
+                            <li>Take my motorcycle or my bicycle for spontaneous rides</li>
+                            <li>Mess around making (electronic) music and <a class="link link--discrete" href="https://open.spotify.com/artist/4Vsfdlyn5wvebSFwLyOfcx" target="_blank">actually release a single</a> every now and then</li>
+                            <li>Work on hobby design- and development projects</li>
+                            <li>Get my hands dirty in our garden</li>
+                            <li>Play the horse in my (3) kids' riding games</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--alternative">
+                <header class="header">
+                    <h1 class="header__heading">From past to present</h1>
+                    <div class="header__subheading">What I've been up to in the most recent years <small>(more on request)</small></div>
+                </header>
+                <div class="timeline">
+                    <ul class="timeline__list">
+                        <li class="timeline__milestone">
+                            <div class="timeline__period">1981</div>
+                            <h2 class="timeline__heading">Birth</h2>
+                            <div class="timeline__description">
+                                Leiden, The Netherlands. Close to the sea, Randstad Metropolitain area and means of international travel. Grew up in its vicinity. School and life.
+                            </div>
+                        </li>
+                        <li class="timeline__milestone">
+                            <div class="timeline__period">2006 - 2018</div>
+                            <h2 class="timeline__heading">Works4sure</h2>
+                            <div class="timeline__description">
+                                My own business, for which I started freelancing, often in close collaboration with other freelancers. Gained lots of experience, working for clients domestic and abroad. Embraced 'human centered design'.
+                            </div>
+                        </li>
+                        <li class="timeline__milestone">
+                            <div class="timeline__period">2009 - 2011</div>
+                            <h2 class="timeline__heading">Whoooz! Webmedia</h2>
+                            <div class="timeline__description">
+                                Agency. Became a partner. Helped organizing a succesful series of our own EECI-conferences in <a class="link link--discrete" href="https://web.archive.org/web/20100618064819/http://eeciconf.com/" target="_blank">Leiden</a>, San Francisco and <a class="link link--discrete" href="https://web.archive.org/web/20110718233328/http://www.eeciconf.com/" target="_blank">Brooklyn</a>. Lots and lots of travel. Expanding business network.
+                            </div>
+                        </li>
+                        <li class="timeline__milestone">
+                            <div class="timeline__period">2011 - 2012</div>
+                            <h2 class="timeline__heading">TravelBird</h2>
+                            <div class="timeline__description">
+                                Online travel agency. Start-up at the time. Joined the then-small team as their web designer. Helped optimizing conversion and kick-start (extreme) rapid growth.
+                            </div>
+                        </li>
+                        <li class="timeline__milestone">
+                            <div class="timeline__period">2016 - 2018</div>
+                            <h2 class="timeline__heading">
+                                <a class="link" href="https://www.newstory.nl/en" target="_blank">New Story</a>
+                            </h2>
+                            <div class="timeline__description">
+                                Design agency (previously known as Aan Zee). Best location ever: overlooking the North Sea. Did lots of React and Angular development in SCRUM-collaboration with our clients.
+                            </div>
+                        </li>
+                        <li class="timeline__milestone">
+                            <div class="timeline__period">2018</div>
+                            <h2 class="timeline__heading">Moved cross country</h2>
+                            <div class="timeline__description">
+                                To beautiful Drenthe, in my wife's footsteps. No regrets thus far. Love nature, space and the quiet, miss the sea. Quit my job because of the distance.
+                            </div>
+                        </li>
+                        <li class="timeline__milestone">
+                            <div class="timeline__period">2018 ~</div>
+                            <h2 class="timeline__heading">
+                                <a class="link" href="https://thelearningnetwork.nl/en/" target="_blank">The Learning Network</a>
+                            </h2>
+                            <div class="timeline__description">
+                                Working fulltime as a front-end developer on our own education themed React and Angular applications.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section section">
+                <div class="container">
+                    <header class="header">
+                        <h1 class="header__heading">Me in a nutshell</h1>
+                    </header>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="footer">
+            <header class="header header--alternative">
+                <h1 class="header__heading">Need to get in touch?</h1>
+            </header>
+            <div class="footer__container container">
+                <div class="content">
+                    That's easy: shoot me a message through <a class="link" href="https://www.linkedin.com/in/elcriz/"" target="_blank">LinkedIn</a> or <a class="link" href="https://twitter.com/elcriz" target="_blank">Twitter</a> or fork me on <a class="link" href="https://github.com/elcriz"" target="_blank">GitHub</a>. You can also find me (and my 7k+ photos) on <a class="link" href="https://www.instagram.com/elcriz/" target="_blank">Instagram</a> or expose yourself to my ramblings in making music on <a class="link" href="https://open.spotify.com/artist/4Vsfdlyn5wvebSFwLyOfcx" target="_blank">Spotify</a> or <a class="link" href="https://music.apple.com/us/artist/elcriz/1531412039" target="_blank">Apple Music</a>. I look forward getting to know you!
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
