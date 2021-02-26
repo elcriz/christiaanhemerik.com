@@ -6,6 +6,9 @@
         position: relative;
         padding-left: calc(var(--spacing) * 3);
         margin-bottom: var(--spacing);
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
 
         &::before {
             position: absolute;
@@ -21,14 +24,12 @@ li {
     .do-list--love & {
         &::before {
             color: rgba(var(--color-pink), 1);
-            // content: '\2665';
         }
     }
 
     .do-list--green & {
         &::before {
             color: rgba(var(--color-green), 1);
-            // content: '\2663';
         }
     }
 }

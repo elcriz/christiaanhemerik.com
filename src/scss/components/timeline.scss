@@ -79,7 +79,7 @@
 
     &:hover {
         @media(min-width: $range-lap-begin) {
-            padding-bottom: calc(var(--spacing) * 4);
+            padding-bottom: calc(var(--spacing) * 3);
         }
     }
 }
@@ -148,4 +148,21 @@
 .timeline__description {
     margin-bottom: calc(var(--spacing) * 2);
     font-size: var(--font-size-90);
+}
+
+.timeline__image {
+    margin-bottom: calc(var(--spacing) * 2);
+    border-radius: var(--border-radius-100);
+    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15), inset 0 72px 1px rgba(var(--color-ui), .5);
+
+    @media(max-width: $range-hand-end) {
+        display: block;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media(min-width: $range-lap-begin) {
+        max-width: 100%;
+    }
 }

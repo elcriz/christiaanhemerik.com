@@ -11,6 +11,11 @@
 .header__heading {
     text-align: center;
 
+    @media(max-width: $range-hand-end) {
+        font-size: var(--font-size-300);
+        font-weight: var(--font-weight-300);
+    }
+
     @media(min-width: $range-hand-begin) {
         display: flex;
         justify-content: center;

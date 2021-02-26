@@ -1,0 +1,25 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: calc(var(--spacing) * 2);
+}
+
+.profile__content {
+    order: 1;
+
+    @media(min-width: $range-lap-begin) {
+        padding-left: calc(var(--spacing) * 6);
+    }
+}
+
+.profile__image {
+    order: 0;
+    width: 30%;
+    border-radius: var(--border-radius-100);
+    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15), inset 0 72px 1px rgba(var(--color-ui), .5);
+
+    @media(max-width: $range-hand-end) {
+        display: none;
+    }
+}
