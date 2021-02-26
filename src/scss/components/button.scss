@@ -16,8 +16,4 @@
     &:focus {
         box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .25);
     }
-
-    .page-hero__actions & {
-        margin-right: var(--spacing);
-    }
 }
