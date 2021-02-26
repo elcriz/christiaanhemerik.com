@@ -1,10 +1,12 @@
 .link {
     color: rgba(var(--color-primary), 1);
     font-weight: var(--font-weight-200);
+    transition: var(--transition-cubic);
 
     &:hover,
     &:focus {
-        text-decoration: underline;
+        filter: brightness(.9);
+        border-bottom: 1px dashed rgba(var(--color-primary), 1);
     }
 }
 

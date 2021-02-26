@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
-@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 // Ranges
 $range-palm-begin: 320px !default;
@@ -15,7 +15,7 @@ $range-desk-begin: 1041px !default;
 
     // Font families
     --font-family-sans-serif: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
-    --font-family-serif: 'Monoton', 'Georgia', 'Times', serif;
+    --font-family-serif: 'Kaushan Script', 'Georgia', 'Times', serif;
 
     // Layout
     --spacing: 8px;
@@ -49,7 +49,7 @@ $range-desk-begin: 1041px !default;
     --font-size-300: 21px;
     --font-size-400: 32px;
     --font-size-500: 48px;
-    --font-size-600: 64px;
+    --font-size-600: 56px;
 
     // Font-weights
     --font-weight-90: 300;

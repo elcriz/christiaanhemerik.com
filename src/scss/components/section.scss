@@ -16,8 +16,10 @@
             calc(var(--section-dot-separation) - var(--section-dot-size)), transparent 1%) center,
         linear-gradient(rgba(var(--section-dot-background-color), 1)
             calc(var(--section-dot-separation) - var(--section-dot-size)), transparent 1%) center,
-        rgba(var(--section-dot-color), .75);
+        rgba(var(--section-dot-color), .5);
     background-size: var(--section-dot-separation) var(--section-dot-separation);
+    border-top: 4px solid rgba(var(--color-white), .5);
+    border-bottom: 4px solid rgba(var(--color-white), .5);
     // border-top: 1px dashed rgba(var(--color-text-alternative), .5);
     // border-bottom: 1px dashed rgba(var(--color-text-alternative), .5);
 }

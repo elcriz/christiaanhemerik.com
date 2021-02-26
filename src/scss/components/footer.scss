@@ -1,11 +1,24 @@
+:root {
+    --footer-dot-color: var(--color-secondary);
+    --footer-dot-background-color: var(--color-ui-dark);
+    --footer-dot-size: 1px;
+    --footer-dot-separation: calc(var(--spacing) * 2);
+}
+
 .footer {
     padding-top: calc(var(--spacing) * 4);
     padding-bottom: calc(var(--spacing) * 6);
-    background-color: rgba(var(--color-ui-dark), 1);
     color: rgba(var(--color-text-light), 1);
+    background:
+    linear-gradient(90deg, rgba(var(--footer-dot-background-color), 1)
+        calc(var(--footer-dot-separation) - var(--footer-dot-size)), transparent 1%) center,
+    linear-gradient(rgba(var(--footer-dot-background-color), 1)
+        calc(var(--footer-dot-separation) - var(--footer-dot-size)), transparent 1%) center,
+    rgba(var(--footer-dot-color), .75);
+    background-size: var(--footer-dot-separation) var(--footer-dot-separation);
+    border-top: 4px solid rgba(var(--color-white), .5);
 }
 
 .footer__container {
     max-width: var(--range-hand-end);
-    // text-align: center;
 }

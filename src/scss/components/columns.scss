@@ -3,7 +3,7 @@
 
     @media(min-width: $range-lap-begin) {
         column-width: auto;
-        column-gap: calc(var(--spacing) * 2);
+        column-gap: calc(var(--spacing) * 6);
     }
 
     @media(min-width: $range-lap-begin) and (max-width: 880px) {
@@ -16,8 +16,13 @@
 
     h2 {
         margin-top: calc(var(--spacing) * 2);
-        margin-bottom: var(--spacing);
+        margin-bottom: calc(var(--spacing) * 2);
+        margin-left: calc(var(--spacing) * 1);
+        padding: 0 0 var(--spacing);
+        font-family: var(--font-family-serif);
         font-size: var(--font-size-300);
+        border-bottom: 4px dashed rgba(var(--color-secondary), .15);
+        text-align: center;
 
         &:first-child {
             margin-top: 0;

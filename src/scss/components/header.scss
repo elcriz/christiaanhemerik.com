@@ -1,6 +1,11 @@
 .header {
     margin-top: var(--spacing);
     margin-bottom: calc(var(--spacing) * 4);
+
+    @media(max-width: $range-hand-end) {
+        padding-left: var(--spacing);
+        padding-right: var(--spacing);
+    }
 }
 
 .header__heading {

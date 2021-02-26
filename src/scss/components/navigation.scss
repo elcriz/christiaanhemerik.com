@@ -11,6 +11,7 @@
     color: rgba(var(--color-secondary), 1);
     font-size: var(--font-size-200);
     font-weight: var(--font-weight-200);
+    transition: var(--transition-cubic);
 
     &:hover,
     &:focus {

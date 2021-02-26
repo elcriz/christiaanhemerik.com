@@ -5,11 +5,12 @@
     font-weight: var(--font-weight-200);
     border-radius: var(--border-radius-100);
     transition: var(--transition-cubic);
+    text-transform: uppercase;
 }
 
 .button--primary {
     background-color: rgba(var(--color-primary), 1);
-    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15);
+    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15), inset 0 18px 1px rgba(var(--color-ui), .25);
 
     &:hover,
     &:focus {
