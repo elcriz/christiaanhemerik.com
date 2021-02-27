@@ -30,11 +30,11 @@
 
     &:hover,
     &:focus {
-        box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .35);
+        box-shadow: -8px 8px 1px rgba(var(--color-ui-dark), .35);
 
         &::after {
-            background-color: rgba(var(--color-text-alternative), 1);
-            box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .25);
+            background-color: rgba(var(--color-ui-dark), 1);
+            box-shadow: -8px 8px 1px rgba(var(--color-ui-dark), .25);
         }
     }
 }
