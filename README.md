@@ -10,6 +10,6 @@ Yes, it uses Gulp. I hear you think: it's 2021 (at least...), why on earth would
 
 This is no such website. Gulp has a clear, easy to understand syntax, is fast enough and still my prime choice if all I need to do is build a simple, static (prototyped) website with nothing but HTML, CSS and a bunch of images.
 
-## Why it has no CMS, or uses something like Yekyll
+## Why it has no static site generator or CMS
 
 Again, it is a simple one page, personal website that is easy to maintain in just the way it is: static code. Also, it features no dynamic content like a blog.
