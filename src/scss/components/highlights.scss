@@ -1,6 +1,7 @@
 .highlights {
     display: grid;
     grid-gap: calc(var(--spacing) * 4);
+    padding-bottom: var(--spacing);
 
     @media (min-width: $range-desk-begin) {
         grid-template-columns: repeat(2, 1fr);
@@ -14,7 +15,8 @@
     color: rgba(var(--color-text), 1);
     border-radius: var(--border-radius-100);
     font-size: var(--font-size-100);
-    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15), inset 0 72px 1px rgba(var(--color-ui), .5);
+    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15),
+        inset 0 72px 1px rgba(var(--color-ui), .5);
     transition: var(--transition-cubic);
 
     &::after {
