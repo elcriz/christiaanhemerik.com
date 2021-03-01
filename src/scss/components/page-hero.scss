@@ -6,7 +6,7 @@
     }
 
     @media(min-width: $range-lap-begin) {
-        padding-bottom: calc(var(--spacing) * 8);
+        padding-bottom: calc(var(--spacing) * 9);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -38,20 +38,30 @@
         font-size: var(--font-size-300);
         font-weight: var(--font-weight-300);
     }
+
+    @media(min-width: $range-lap-begin) and (max-width: 920px) {
+        font-size: var(--font-size-350);
+    }
+
+    @media(min-width: 921px) {
+        margin-left: -8px;
+    }
 }
 
 .page-hero__greeter {
     display: inline-block;
-    margin-bottom: calc(var(--spacing) * 4.5);
+    margin-bottom: calc(var(--spacing) * 5);
     color: rgba(var(--color-text-emphasize), 1);
     font-family: var(--font-family-serif);
     font-size: var(--font-size-600);
+    font-weight: var(--font-weight-200);
     border-bottom: 4px dashed rgba(var(--color-text-emphasize), .15);
     transform: rotate(-4deg);
 
     span {
         font-family: var(--font-family-sans-serif);
         font-size: var(--font-size-100);
+        font-weight: var(--font-weight-100);
 
         @media(max-width: $range-hand-end) {
             line-height: var(--line-height-90);
@@ -69,9 +79,13 @@
         margin-left: calc(var(--spacing) * 16);
     }
 
+    @media(min-width: $range-lap-begin) and (max-width: 920px) {
+        margin-left: calc(-4 * var(--spacing));
+    }
+
     @media (min-width: 921px) {
-        margin-left: calc(-3 * var(--spacing));
-        padding-right: calc(var(--spacing) * 4);
+        margin-left: calc(-6 * var(--spacing));
+        padding-left: calc(var(--spacing) * 4);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -89,7 +103,7 @@
     }
 
     @media(min-width: 921px) {
-        margin-top: var(--spacing);
+        margin-top: calc(var(--spacing) * 2);
         text-indent: calc(var(--spacing) * 4);
     }
 }
@@ -99,6 +113,7 @@
     display: block;
     border-radius: var(--border-radius-circle);
     border: 24px dashed rgba(var(--color-text-alternative), .15);
+    z-index: -1;
 
     @media(max-width: $range-hand-end) {
         position: absolute;
@@ -111,7 +126,7 @@
     @media(min-width: $range-lap-begin) {
         order: 0;
         max-width: 220px;
-        margin: var(--spacing);
+        margin: calc(var(--spacing) * 2) var(--spacing) calc(var(--spacing) / 2);
     }
 
     @media (prefers-color-scheme: dark) {

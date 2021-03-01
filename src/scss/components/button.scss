@@ -1,6 +1,6 @@
 .button {
     display: inline-block;
-    padding: var(--spacing) calc(var(--spacing) * 2);
+    padding: var(--spacing) calc(var(--spacing) * 3);
     color: rgba(var(--color-text-light), 1);
     font-weight: var(--font-weight-200);
     border-radius: var(--border-radius-100);
@@ -14,7 +14,7 @@
 
 .button--primary {
     background-color: rgba(var(--color-primary), 1);
-    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15),
+    box-shadow: -8px 8px 0px rgba(var(--color-text-alternative), .15),
         inset 0 20px 1px rgba(var(--color-white), .225);
 
     &:hover,
@@ -23,7 +23,8 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        box-shadow: -8px 8px 1px rgba(var(--color-blue), .75),
-            inset 0 20px 1px rgba(var(--color-white), .225);
+        box-shadow: -8px 8px 0px rgba(var(--color-blue), .75),
+            inset 0 20px 1px rgba(var(--color-white), .175);
+        text-shadow: 1px 1px 1px rgba(var(--color-white), .15);
     }
 }
