@@ -6,15 +6,22 @@
 }
 
 .navigation__link {
+    position: relative;
+    top: 1px;
     display: inline-block;
     margin: 0 var(--spacing);
-    color: rgba(var(--color-secondary), 1);
+    color: rgba(var(--color-text-alternative), 1);
     font-size: var(--font-size-200);
     font-weight: var(--font-weight-200);
     transition: var(--transition-cubic);
 
     &:hover,
     &:focus {
-        color: rgba(var(--color-primary), 1);
+        color: rgba(var(--color-text-emphasize), 1);
+        top: -1px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: rgba(var(--color-light-blue), .75);
     }
 }

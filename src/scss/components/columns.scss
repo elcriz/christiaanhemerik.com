@@ -26,6 +26,10 @@
         &:first-child {
             margin-top: 0;
         }
+
+        @media (prefers-color-scheme: dark) {
+            border-color: rgba(var(--color-blue), .8);
+        }
     }
 }
 

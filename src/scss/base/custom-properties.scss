@@ -20,29 +20,47 @@ $range-desk-begin: 1041px !default;
     // Layout
     --spacing: 8px;
 
-    // Colours
+    // Colours - 1) functional
     --color-black: 30, 30, 30;
     --color-grey: 102, 116, 137;
     --color-white: 255, 255, 255;
-    --color-red: 200, 0, 0;
+    --color-red: 236, 60, 120;
     --color-blue: 41, 66, 110;
+    --color-light-blue: 234, 237, 242;
     --color-dark-blue: 19, 35, 67;
     --color-green: 63, 142, 67;
     --color-orange: 249, 148, 57;
     --color-pink: 236, 60, 120;
 
+    // Colours - 2) hierarchical
     --color-primary: var(--color-pink);
     --color-secondary: var(--color-blue);
 
+    // Colours - 3) typography
     --color-text: var(--color-black);
     --color-text-emphasize: var(--color-pink);
     --color-text-light: var(--color-white);
     --color-text-grey: var(--color-grey);
     --color-text-alternative: var(--color-blue);
 
-    --color-ui: 234, 237, 242;
+    // Colours - 4) additional
+    --color-ui: var(--color-light-blue);
     --color-ui-light: var(--color-white);
     --color-ui-dark: var(--color-blue);
+
+    // Dark mode
+    @media (prefers-color-scheme: dark) {
+        --color-black: 0, 15, 47;
+        --color-grey: var(--color-light-blue);
+        --color-pink: var(--color-orange);
+
+        --color-text: var(--color-light-blue);
+        --color-text-light: var(--color-black);
+
+        --color-ui: var(--color-blue);
+        --color-ui-light: var(--color-dark-blue);
+        --color-ui-dark: var(--color-white);
+    }
 
     // Font sizes
     --font-size-90: 12px;

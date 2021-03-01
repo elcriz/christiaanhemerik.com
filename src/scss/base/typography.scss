@@ -4,6 +4,7 @@ body {
     font-weight: var(--font-weight-100);
     line-height: var(--line-height-300);
     color: rgba(var(--color-text), 1);
+    background-color: rgba(var(--color-ui-light), 1);
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-osx-fonth-smoothing: grayscale;
@@ -19,8 +20,39 @@ h2 {
     @media(min-width: $range-hand-begin) {
         font-size: var(--font-size-400);
     }
+
+    @media (prefers-color-scheme: dark) {
+        color: rgba(var(--color-white), 1);
+    }
+}
+
+p {
+    margin-bottom: var(--spacing);
 }
 
 strong {
     font-weight: var(--font-weight-200);
+}
+
+.hide-when-dark,
+.hide-when-light {
+    font-weight: var(--font-weight-200);
+}
+
+.hide-when-dark {
+    display: inline;
+}
+
+.hide-when-light {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .hide-when-dark {
+        display: none;
+    }
+
+    .hide-when-light {
+        display: inline;
+    }
 }

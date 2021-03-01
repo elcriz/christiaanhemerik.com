@@ -11,13 +11,22 @@
 .highlight {
     position: relative;
     padding: calc(var(--spacing) * 2);
-    background: rgba(var(--color-ui-light), 1);
+    background-color: rgba(var(--color-ui-light), 1);
     color: rgba(var(--color-text), 1);
     border-radius: var(--border-radius-100);
     font-size: var(--font-size-100);
     box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15),
         inset 0 72px 1px rgba(var(--color-ui), .5);
     transition: var(--transition-cubic);
+
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(
+            rgba(var(--color-ui-light), 1),
+            rgba(var(--color-black), .75),
+        );
+        box-shadow: -8px 8px 1px rgba(var(--color-light-blue), .075),
+            inset 0 72px 1px rgba(var(--color-ui), .5);
+    }
 
     &::after {
         position: absolute;

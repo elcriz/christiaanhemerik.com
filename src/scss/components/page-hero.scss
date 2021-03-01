@@ -8,6 +8,13 @@
     @media(min-width: $range-lap-begin) {
         padding-bottom: calc(var(--spacing) * 8);
     }
+
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(
+            transparent,
+            rgba(var(--color-black), .5),
+        );
+    }
 }
 
 .page-hero__container {
@@ -66,6 +73,10 @@
         margin-left: calc(-3 * var(--spacing));
         padding-right: calc(var(--spacing) * 4);
     }
+
+    @media (prefers-color-scheme: dark) {
+        border-bottom: 4px dashed rgba(var(--color-text-emphasize), .5);
+    }
 }
 
 .page-hero__content {
@@ -101,6 +112,10 @@
         order: 0;
         max-width: 220px;
         margin: var(--spacing);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        border-color: rgba(var(--color-blue), .75);
     }
 }
 

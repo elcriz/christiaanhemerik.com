@@ -17,9 +17,13 @@
     order: 0;
     width: 30%;
     border-radius: var(--border-radius-100);
-    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15), inset 0 72px 1px rgba(var(--color-ui), .5);
+    box-shadow: -8px 8px 1px rgba(var(--color-text-alternative), .15);
 
     @media(max-width: $range-hand-end) {
         display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        box-shadow: -8px 8px 1px rgba(var(--color-light-blue), .075);
     }
 }

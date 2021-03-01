@@ -15,6 +15,10 @@
     page-break-inside: avoid;
     break-inside: avoid;
 
+    @media (prefers-color-scheme: dark) {
+        color: rgba(var(--color-text), 1);
+    }
+
     &::before {
         position: absolute;
         bottom: 0;
@@ -22,9 +26,11 @@
         height: 8px;
         content: '';
         background-color: rgba(var(--color-ui-dark), .15);
-        font-weight: var(--font-weight-100);
-        text-align: right;
         border-radius: var(--border-radius-100);
+
+        @media (prefers-color-scheme: dark) {
+            background-color: rgba(var(--color-ui-dark), .25);
+        }
     }
 
     .tags--code &,
@@ -50,6 +56,10 @@
         &::after {
             color: rgba(var(--color-orange), 1);
             content: '\2927';
+
+            @media (prefers-color-scheme: dark) {
+                color: rgba(var(--color-red), 1);
+            }
         }
     }
 

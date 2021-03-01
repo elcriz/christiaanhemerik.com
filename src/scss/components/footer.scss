@@ -3,6 +3,13 @@
     --footer-dot-background-color: var(--color-ui-dark);
     --footer-dot-size: 1px;
     --footer-dot-separation: calc(var(--spacing) * 2);
+
+    @media (prefers-color-scheme: dark) {
+        --footer-dot-color: var(--color-text);
+        --footer-dot-background-color: var(--color-blue);
+        --footer-dot-size: 1px;
+        --footer-dot-separation: calc(var(--spacing) * 2);
+    }
 }
 
 .footer {
@@ -16,6 +23,11 @@
     rgba(var(--footer-dot-color), .75);
     background-size: var(--footer-dot-separation) var(--footer-dot-separation);
     border-top: 4px solid rgba(var(--color-white), .25);
+
+    @media (prefers-color-scheme: dark) {
+        color: rgba(var(--color-text), 1);
+        border: none;
+    }
 }
 
 .footer__container {
@@ -31,4 +43,11 @@
     background-color: rgba(var(--color-dark-blue), .75);
     font-size: var(--font-size-90);
     text-align: center;
+
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(
+            rgba(var(--color-ui-light), 1),
+            rgba(var(--color-black), .75),
+        );
+    }
 }

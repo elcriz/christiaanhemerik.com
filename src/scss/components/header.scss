@@ -30,10 +30,18 @@
         font-size: var(--font-size-100);
         font-weight: var(--font-weight-90);
         text-transform: uppercase;
+
+        @media (prefers-color-scheme: dark) {
+            color: rgba(var(--color-light-blue), 1);
+        }
     }
 
     .header--alternative & {
         color: rgba(var(--color-text-light), 1);
+
+        @media (prefers-color-scheme: dark) {
+            color: rgba(var(--color-text), 1);
+        }
     }
 }
 
@@ -55,5 +63,13 @@
         font-size: var(--font-size-90);
         font-weight: var(--font-weight-100);
         text-transform: uppercase;
+
+        @media (prefers-color-scheme: dark) {
+            color: rgba(var(--color-light-blue), 1);
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: rgba(var(--color-text), 1);
     }
 }

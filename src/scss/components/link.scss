@@ -7,6 +7,10 @@
     &:focus {
         filter: brightness(.9);
         border-bottom: 1px dashed rgba(var(--color-primary), 1);
+
+        @media (prefers-color-scheme: dark) {
+            filter: none;
+        }
     }
 }
 
